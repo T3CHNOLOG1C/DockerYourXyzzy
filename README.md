@@ -1,9 +1,8 @@
 # Docker Your Xyzzy
 
-Get your Xyzzy on: `docker pull emcniece/dockeryourxyzzy`
+Get your Xyzzy on: `docker pull T3CHNOLOG1C/dockeryourxyzzy`
 
-- Github: [emcniece/DockerYourXyzzy](https://github.com/emcniece/DockerYourXyzzy)
-- Docker Hub: [emcniece/dockeryourxyzzy](https://hub.docker.com/r/emcniece/dockeryourxyzzy/)
+- Github: [T3CHNOLOG1C/DockerYourXyzzy](https://github.com/T3CHNOLOG1C/DockerYourXyzzy)
 
 
 # Supported tags and respective `Dockerfile` links:
@@ -15,7 +14,7 @@ Get your Xyzzy on: `docker pull emcniece/dockeryourxyzzy`
 
 # What is Docker Your Xyzzy?
 
-This is a containerized build of the [Pretend You're Xyzzy](https://github.com/ajanata/PretendYoureXyzzy) Cards Against Humanity clone.
+This is a containerized build of my fork of the [Pretend You're Xyzzy](https://github.com/T3CHNOLOG1C/PretendYoureXyzzy) Cards Against Humanity clone.
 
 This multi-step [Dockerfile](./Dockerfile) contains 3 stages: `base`, `dev`, and `run`. The `base` image will copy the compiled files over to an output directory, and the `dev` and `run` images will run the project.
 
@@ -46,7 +45,7 @@ Keep the container up with SQLite and `war:exploded jetty:run`:
 docker run -d \
   -p 8080:8080 \
   --name pyx-dev \
-  emcniece/dockeryourxyzzy:dev
+  T3CHNOLOG1C/dockeryourxyzzy:dev
 
 # Visit http://localhost:8080 in your browser
 # Or, start a bash session within the container:
@@ -77,7 +76,7 @@ Project `build.properties` commands can be overridden by altering the default co
 ```sh
 docker run -d \
   -p 8080:8080 \
-  emcniece/dockeryourxyzzy:run
+  T3CHNOLOG1C/dockeryourxyzzy:run
 ```
 
 
@@ -144,7 +143,7 @@ docker-compose up -d --build
 ```
 
 
-# ToDo
+# ToDo (dunno how to do any of this)
 
 - [ ] Figure out how to run `:latest` properly with a Postgres db
 - [ ] Import & run sql files if specified for the Postgres db
